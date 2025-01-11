@@ -1,93 +1,72 @@
-Sentiment Analysis on Movie Reviews 🎮
-
+🎬 Sentiment Analysis on Movie Reviews 🎮
 Overview
-
-This project leverages cutting-edge Natural Language Processing (NLP) techniques to classify movie reviews as positive or negative. It provides flexibility through multiple approaches, including a machine learning model trained on IMDb data and a pre-trained transformer model from Hugging Face. The project features an interactive user interface for real-time predictions and batch processing.
+Dive into the world of movie reviews with our state-of-the-art Sentiment Analysis project. Using advanced Natural Language Processing (NLP) techniques, this project classifies movie reviews as positive or negative, offering flexibility through multiple approaches. Whether you're looking for real-time predictions or batch processing, this interactive platform has you covered.
 
 Features
+Data Preprocessing
+Text Cleaning & Tokenization: Powered by NLTK for spotless data.
 
-Data Preprocessing:
+TF-IDF Vectorization: Converts text into numerical form for analysis.
 
-Utilizes NLTK for text cleaning, tokenization, and stopword removal.
+Machine Learning Models
+Random Forest Classifier: Custom-trained on IMDb data for sentiment prediction.
 
-Converts text data into numerical form using TF-IDF vectorization.
+Hugging Face Transformer: Utilizes distilbert-base-uncased-finetuned-sst-2-english for top-notch accuracy.
 
-Machine Learning Models:
+Model Comparison
+Seamless Switching: Easily switch between Random Forest and Hugging Face models for analysis.
 
-A custom-trained Random Forest Classifier for sentiment prediction.
+Interactive Interface
+Streamlit Web App: Intuitive UI for:
 
-A robust pre-trained transformer model from Hugging Face (distilbert-base-uncased-finetuned-sst-2-english) for enhanced accuracy.
+Single Review Analysis: Quick sentiment analysis of individual reviews.
 
-Model Comparison:
+Batch Processing: Upload and process multiple reviews in bulk.
 
-Users can seamlessly switch between the Random Forest model and the Hugging Face transformer for analysis.
+GPU/CPU Flexibility
+Automatic Detection: Utilizes GPU if available, otherwise falls back to CPU for predictions.
 
-Interactive Interface:
-
-Built with Streamlit, offering an intuitive user interface for:
-
-Single review analysis: Input individual movie reviews for quick sentiment analysis.
-
-Batch processing: Upload a file containing multiple reviews to process them in bulk.
-
-GPU/CPU Flexibility:
-
-Automatically detects and utilizes GPU (if available) for faster Hugging Face model predictions. Falls back to CPU when a GPU is not accessible.
-
-Visualization:
-
-Provides sentiment confidence scores and clear visual results.
+Visualization
+Confidence Scores: Clear visual representation of sentiment confidence.
 
 What's Included
+Preprocessing Pipeline
+Data Cleaning & Tokenization
 
-Preprocessing Pipeline:
+TF-IDF Vectorization
 
-Cleaning, tokenization, and vectorization of input data.
+Custom Machine Learning Model
+Random Forest: Trained on IMDb reviews for balanced performance.
 
-Custom Machine Learning Model:
+Transformer-Based Sentiment Analysis
+Pre-trained Model: From Hugging Face for superior results.
 
-Random Forest model trained on IMDb movie reviews for balanced performance.
+Streamlit Web App
+User-Friendly Interface: Input reviews or upload files seamlessly.
 
-Transformer-Based Sentiment Analysis:
+Real-Time Model Switching
 
-Pre-trained model from Hugging Face for state-of-the-art results.
-
-Streamlit Web App:
-
-User-friendly interface to input reviews or upload files for analysis.
-
-Supports switching between models in real-time.
-
-Deployment Ready:
-
-Designed for local use and cloud deployment.
+Deployment Ready
+Local & Cloud Deployment: Designed for flexibility.
 
 How to Use
-
-Run the Application:
-
+Run the Application
+bash
 streamlit run app.py
+Input Options
+Type Individual Reviews: Quick sentiment analysis.
 
-Input Options:
+Upload CSV: Batch process multiple reviews.
 
-Type in individual movie reviews.
+Select Model
+Hugging Face Pre-trained Model: Enhanced accuracy.
 
-Upload a CSV file for batch processing.
+Custom Random Forest Model: Lightweight solution.
 
-Select Model:
-
-Choose between:
-
-Hugging Face Pre-trained Model for enhanced accuracy.
-
-Custom Random Forest Model for a lightweight solution.
-
-View Results:
-
-Get predictions with sentiment labels (Positive/Negative) and confidence scores.
+View Results
+Sentiment Labels: Positive/Negative with confidence scores.
 
 Technologies Used
-
 Programming Language: Python
 
 Libraries/Frameworks:
@@ -101,7 +80,4 @@ Web App: Streamlit
 Deployment Ready: Docker-compatible
 
 Deployment Options
-
-Local deployment using Streamlit.
-
-
+Local Deployment: Using Streamlit.
